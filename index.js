@@ -12,6 +12,13 @@
   // end nav button
 
   // hero image
+  function heroImageHandler() {
+    const heroEl = document.querySelector('section.hero');
+    setInterval(() => {
+      heroEl.classList.toggle('hero--2');
+    }, 3000);
+  }
+  heroImageHandler();
   // end hero image
 
 })();

@@ -103,8 +103,13 @@ body {
   background-size: cover;
   font-family: 'Poppins';
   height: calc(100vh - 75px);
-  max-height: 600px;
+  max-height: 560px;
   padding-top: 208px;
+}
+
+.hero--2 {
+  background-image: url('assets/hero2-md.png');
+  background-image: linear-gradient(270.68deg, rgba(255, 255, 255, 0) 0.39%, #151515 150%), url('assets/hero2-md.png');
 }
 
 .hero__content {
@@ -139,9 +144,15 @@ body {
   border: 1px solid white;
   border-radius: 66px;
   color: white;
+  cursor: pointer;
   width: 200px;
   height: 40px;
   margin-top: 32px;
+}
+
+.hero__header-btn:hover, .hero__header-btn:active, .hero__header-btn:focus {
+  background-color: white;
+  color: rgba(21, 21, 21, 0.95);;
 }
 
 @media (min-width: 320px) {
@@ -167,6 +178,9 @@ body {
   .hero {
     background-image: url('assets/hero1.png');
     background-image: linear-gradient(270.68deg, rgba(255, 255, 255, 0) 0.59%, #151515 101.54%), url('assets/hero1.png');
-
+  }
+  .hero--2 {
+    background-image: url('assets/hero2.png');
+    background-image: linear-gradient(270.68deg, rgba(255, 255, 255, 0) 0.59%, #151515 101.54%), url('assets/hero2.png');
   }
 }
