@@ -200,11 +200,19 @@ body {
 
 .populars-men__item-image {
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 180px;
   background: #FFFFFF;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
+}
+
+.populars-men__item-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
 }
 
 .populars-men__item-name {
@@ -230,37 +238,155 @@ body {
   margin-top: 16px;
 }
 
-.populars-men__item-stars-container {
+.populars-men__item-star-container {
   display: flex;
 }
 
-.heart {
+.populars-men__item-heart, .populars-men__item-star {
   cursor: pointer;
 }
 
-.heart.active {
+.populars-men__item-heart.active {
   color: white;
 }
 
-.populars-men__item-stars-container--1 .populars-men__item-stars-1 {
+.populars-men__item-star-container--1 .populars-men__item-star--1 {
   color: white;
 }
 
-.populars-men__item-stars-container--2 .populars-men__item-stars-1, .populars-men__item-stars-container--2 .populars-men__item-stars-2 {
+.populars-men__item-star-container--2 .populars-men__item-star--1, .populars-men__item-star-container--2 .populars-men__item-star--2 {
   color: white;
 }
 
-.populars-men__item-stars-container--3 .populars-men__item-stars-1, .populars-men__item-stars-container--3 .populars-men__item-stars-2, .populars-men__item-stars-container--3 .populars-men__item-stars-3 {
+.populars-men__item-star-container--3 .populars-men__item-star--1, .populars-men__item-star-container--3 .populars-men__item-star--2, .populars-men__item-star-container--3 .populars-men__item-star--3 {
   color: white;
 }
 
-.populars-men__item-stars-container--4 .populars-men__item-stars-1, .populars-men__item-stars-container--4 .populars-men__item-stars-2, .populars-men__item-stars-container--4 .populars-men__item-stars-3, .populars-men__item-stars-container--4 .populars-men__item-stars-4 {
+.populars-men__item-star-container--4 .populars-men__item-star--1, .populars-men__item-star-container--4 .populars-men__item-star--2, .populars-men__item-star-container--4 .populars-men__item-star--3, .populars-men__item-star-container--4 .populars-men__item-star--4 {
   color: white;
 }
 
-.populars-men__item-stars-container--5 .populars-men__item-stars-1, .populars-men__item-stars-container--5 .populars-men__item-stars-2, .populars-men__item-stars-container--5 .populars-men__item-stars-3, .populars-men__item-stars-container--5 .populars-men__item-stars-4, .populars-men__item-stars-container--5 .populars-men__item-stars-5 {
+.populars-men__item-star-container--5 .populars-men__item-star--1, .populars-men__item-star-container--5 .populars-men__item-star--2, .populars-men__item-star-container--5 .populars-men__item-star--3, .populars-men__item-star-container--5 .populars-men__item-star--4, .populars-men__item-star-container--5 .populars-men__item-star--5 {
   color: white;
 }
+
+
+.populars-women {
+  background: #E0E0E0;
+  font-family: 'Poppins';
+}
+
+.populars-women__container {
+  margin: 0 auto;
+  padding-bottom: 64px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.populars-women__header {
+  color: #D62839;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 24px 24px 0;
+}
+
+.populars-women__items-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 16px;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.populars-women__item {
+  background: #F2F2F2;
+  border: 2px solid #BDBDBD;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 200px;
+}
+
+.populars-women__item-details {
+  padding: 16px;
+}
+
+.populars-women__item-image {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 180px;
+  border-radius: 9px;
+}
+
+.populars-women__item-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.populars-women__item-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.populars-women__item-price {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  color: #151515;
+}
+
+.populars-women__item-rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.populars-women__item-star-container {
+  display: flex;
+}
+
+.populars-women__item-heart, .populars-women__item-star {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+
+.populars-women__item-heart.active {
+  color: #151515;
+}
+
+.populars-women__item-star-container--1 .populars-women__item-star--1 {
+  color: #151515;
+}
+
+.populars-women__item-star-container--2 .populars-women__item-star--1, .populars-women__item-star-container--2 .populars-women__item-star--2 {
+  color: #151515;
+}
+
+.populars-women__item-star-container--3 .populars-women__item-star--1, .populars-women__item-star-container--3 .populars-women__item-star--2, .populars-women__item-star-container--3 .populars-women__item-star--3 {
+  color: #151515;
+}
+
+.populars-women__item-star-container--4 .populars-women__item-star--1, .populars-women__item-star-container--4 .populars-women__item-star--2, .populars-women__item-star-container--4 .populars-women__item-star--3, .populars-women__item-star-container--4 .populars-women__item-star--4 {
+  color: #151515;
+}
+
+.populars-women__item-star-container--5 .populars-women__item-star--1, .populars-women__item-star-container--5 .populars-women__item-star--2, .populars-women__item-star-container--5 .populars-women__item-star--3, .populars-women__item-star-container--5 .populars-women__item-star--4, .populars-women__item-star-container--5 .populars-women__item-star--5 {
+  color: #151515;
+}
+
 
 @media (min-width: 375px) {
   /* .populars-men__header {
@@ -270,6 +396,9 @@ body {
 
 @media (min-width: 425px) {
   .populars-men__items-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .populars-women__items-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -302,11 +431,17 @@ body {
   .populars-men__items-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .populars-women__items-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 
 @media (min-width: 1024px) {
   .populars-men__items-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .populars-women__items-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
