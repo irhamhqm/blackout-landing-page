@@ -1,0 +1,73 @@
+
+.cta {
+  background-image: url('/assets/cta-bg.png');
+  background-size: cover;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  padding-top: 64px;
+  height: 400px;
+}
+
+.cta__header {
+  color: white;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 80%;
+}
+
+.cta__header-2 {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 80%;
+}
+
+.cta__form {}
+
+.cta__button {
+  width: 120px;
+  height: 59px;
+  background: #FF7D00;
+  border-radius: 1rem;
+}
+
+@media (min-width: 375px) {
+  /* .populars-men__header {
+    padding: 32px 24px 0;
+  } */
+}
+
+@media (min-width: 425px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+  .cta {
+    padding-top: 96px;
+  }
+  .cta__header {
+    font-size: 42px;
+    max-width: 100%;
+  }
+  .cta__header-2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+}
