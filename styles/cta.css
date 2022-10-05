@@ -1,6 +1,6 @@
 
 .cta {
-  background-image: url('/assets/cta-bg.png');
+  background-image: url('../assets/cta-bg.png');
   background-size: cover;
   display: flex;
   /* justify-content: center; */
