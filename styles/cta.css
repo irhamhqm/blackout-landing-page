@@ -8,7 +8,7 @@
   flex-direction: column;
   font-family: 'Poppins';
   font-style: normal;
-  padding-top: 64px;
+  padding-top: 48px;
   height: 400px;
 }
 
@@ -32,13 +32,48 @@
   max-width: 80%;
 }
 
-.cta__form {}
+.cta__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.cta__form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cta__input {
+  background: rgba(255, 255, 255, 0.8);
+  border: 3px solid rgba(54, 54, 54, 0.4);
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 80vw;
+  max-width: 720px;
+  height: 3rem;
+  display: block;
+}
 
 .cta__button {
+  color: white;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
   width: 120px;
-  height: 59px;
+  height: 3rem;
+  margin-top: 16px;
   background: #FF7D00;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 
 @media (min-width: 375px) {
@@ -51,9 +86,7 @@
 
 }
 
-
 @media (min-width: 768px) {
-
   .cta {
     padding-top: 96px;
   }
@@ -65,8 +98,30 @@
     font-size: 1.5rem;
     max-width: 100%;
   }
+  .cta__form {
+    /* display: inline; */
+    position: relative;
+  }
+  .cta__input {
+    padding-left: 1.5rem;
+    padding-right: 14rem;
+    font-size: 1.5rem;
+    height: 3.5rem;
+  }
+  .cta__form-content {
+    display: inline;
+    position: relative;
+  }
+  .cta__button {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 13rem;
+    height: 3.5rem;
+  }
 }
-
 
 @media (min-width: 1024px) {
 
